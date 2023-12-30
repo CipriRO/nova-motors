@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col lg:flex-row px-5 lg:px-20 gap-6 lg:gap-9">
+    <section className="flex flex-col lg:flex-row px-5 lg:px-20 gap-6 lg:gap-9 selection:bg-black selection:text-white">
       <div className="flex flex-col gap-6 items-start">
         <h1 className="font-bold text-5xl lg:text-7xl lg:max-w-[31.625rem]">
           Ignite Your Journey with Nova Motors

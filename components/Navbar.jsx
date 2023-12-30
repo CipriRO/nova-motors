@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-center p-5">
+    <nav className="z-30 sticky top-0 flex justify-center p-5 backdrop-blur">
       <Image
         className="flex lg:hidden"
         src="/logo.svg"
