@@ -1,34 +1,34 @@
-import { MinimalCars, ExtendCars } from "@/constants";
+import { HeroMinimalCars, HeroExtendCars } from "@/constants";
 import Image from "next/image";
 import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col lg:flex-row px-5 lg:px-20 gap-6 lg:gap-9 selection:bg-black selection:text-white">
-      <div className="flex flex-col gap-6 items-start">
-        <h1 className="font-bold text-5xl lg:text-7xl lg:max-w-[31.625rem]">
+    <section className="flex flex-col gap-6 px-5 selection:bg-black selection:text-white lg:flex-row lg:gap-9 lg:px-20">
+      <div className="flex flex-col items-start gap-6">
+        <h1 className="text-5xl font-bold md:max-w-[31.625rem] lg:text-7xl">
           Ignite Your Journey with Nova Motors
         </h1>
-        <p className="text-gray-500 lg:max-w-[55.625rem]">
+        <p className="text-gray-500 md:max-w-[40.625rem]">
           Welcome to Nova Motors, where every car embodies excellence. Discover
           a world of unparalleled performance, elegance, and innovation. Begin
           your adventure with us today and experience driving redefined.
         </p>
         <Button
           label="Discover Your Dream Ride"
-          variant="lg:block bg-gray-300 hover:scale-105 transition-transform hidden"
+          variant="lg:block bg-gray-300 lg:hover:scale-105 transition-transform hidden"
         />
       </div>
 
       <div>
-        <div className="w-full h-28 -mb-24 relative z-10 bg-gradient-to-b from-white to-transparent" />
+        <div className="relative z-10 -mb-24 h-28 w-full bg-gradient-to-b from-white to-transparent" />
 
         <div className="grid grid-cols-2 gap-2 md:hidden">
-          {MinimalCars.map((car, index) => (
+          {HeroMinimalCars.map((car, index) => (
             <div
               key={index}
-              className={`p-6 bg-gray-200 inline-block rounded-xl shadow-sm row-span-3 ${
-                index === 1 && "row-start-2 col-start-2"
+              className={`row-span-3 inline-block rounded-xl bg-gray-200 p-6 shadow-sm ${
+                index === 1 && "col-start-2 row-start-2"
               }`}
             >
               <Image
@@ -42,12 +42,12 @@ const Hero = () => {
           ))}
         </div>
 
-        <div className="md:grid grid-cols-3 lg:grid-cols-2 gap-2 hidden">
-          {ExtendCars.map((car, index) => (
+        <div className="hidden grid-cols-3 gap-2 md:grid lg:grid-cols-2">
+          {HeroExtendCars.map((car, index) => (
             <div
               key={index}
-              className={`p-6 bg-gray-200 inline-block rounded-xl shadow-sm row-span-3 ${
-                index === 1 && "row-start-2 col-start-2"
+              className={`row-span-3 inline-block rounded-xl bg-gray-200 p-6 shadow-sm ${
+                index === 1 && "col-start-2 row-start-2"
               }`}
             >
               <Image
@@ -61,10 +61,10 @@ const Hero = () => {
           ))}
         </div>
 
-        <div className="w-full h-28 relative flex justify-center z-10 bg-gradient-to-t from-white to-transparent -mt-24">
+        <div className="relative z-10 -mt-24 flex h-28 w-full justify-center bg-gradient-to-t from-white to-transparent">
           <Button
             label="Discover Your Dream Ride"
-            variant="bg-gray-300 absolute bottom-0 hover:scale-105 transition-transform lg:hidden"
+            variant="bg-gray-300 absolute bottom-0 lg:hover:scale-105 transition-transform lg:hidden"
           />
         </div>
       </div>

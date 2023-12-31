@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="z-30 sticky top-0 flex justify-center p-5 backdrop-blur">
+    <nav className="sticky top-0 z-30 flex justify-center p-5 backdrop-blur">
       <Image
         className="flex lg:hidden"
         src="/logo.svg"
@@ -12,7 +12,7 @@ const Navbar = () => {
         height={50}
       />
       <Image
-        className="lg:flex hidden"
+        className="hidden lg:flex"
         src="/logo-full.svg"
         alt="Nova Motors logo"
         width={500}
