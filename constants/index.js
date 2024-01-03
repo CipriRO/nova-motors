@@ -37,3 +37,9 @@ export const TestimonialsList = [
     stars: 5,
   },
 ];
+
+export const ContactInfo = {
+  address: "123 Auto Avenue, Cityville, CA 12345",
+  email: "info@novamotors.com",
+  phone: "555-555-5555",
+};

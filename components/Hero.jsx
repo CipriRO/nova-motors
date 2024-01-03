@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="flex flex-col gap-6 px-5 selection:bg-black selection:text-white lg:flex-row lg:gap-9 lg:px-20">
       <div className="flex flex-col items-start gap-6">
-        <h1 className="text-5xl font-bold md:max-w-[31.625rem] lg:text-7xl">
+        <h1 className="text-5xl font-bold md:max-w-[31.625rem] lg:text-7xl text-pretty">
           Ignite Your Journey with Nova Motors
         </h1>
         <p className="text-gray-500 md:max-w-[40.625rem]">
