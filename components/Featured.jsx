@@ -29,7 +29,7 @@ const Featured = () => {
               alt="Image of a car"
               width={150}
               height={70}
-              className="w-full lg:w-3/5"
+              className="w-full sm:w-3/5"
             />
             <p className="text-center font-semibold">{car.topic}</p>
           </div>
