@@ -43,3 +43,9 @@ export const ContactInfo = {
   email: "info@novamotors.com",
   phone: "555-555-5555",
 };
+
+export const ServicesList = [
+  { name: "Engine Maintenance", icon: "engine.svg", bg: "engine" },
+  { name: "Wheel Alignment & Balancing", icon: "wheel.svg", bg: "wheels" },
+  { name: "Oil Change", icon: "oil-can.svg", bg: "oil" },
+];

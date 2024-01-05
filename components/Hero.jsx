@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="flex flex-col gap-6 px-5 selection:bg-black selection:text-white lg:flex-row lg:gap-9 lg:px-20">
       <div className="flex flex-col items-start gap-6">
-        <h1 className="text-5xl font-bold md:max-w-[31.625rem] lg:text-7xl text-pretty">
+        <h1 className="text-5xl font-bold md:max-w-[31.625rem] lg:text-7xl">
           Ignite Your Journey with Nova Motors
         </h1>
         <p className="text-gray-500 md:max-w-[40.625rem]">
@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
         <Button
           label="Discover Your Dream Ride"
-          variant="lg:block bg-gray-300 lg:hover:scale-105 transition-transform hidden"
+          variant="lg:block bg-gray-300 hover:scale-105 transition-transform hidden"
         />
       </div>
 
@@ -64,7 +64,7 @@ const Hero = () => {
         <div className="relative z-10 -mt-24 flex h-28 w-full justify-center bg-gradient-to-t from-white to-transparent">
           <Button
             label="Discover Your Dream Ride"
-            variant="bg-gray-300 absolute bottom-0 lg:hover:scale-105 transition-transform lg:hidden"
+            variant="bg-gray-300 absolute bottom-0 hover:scale-105 transition-transform lg:hidden"
           />
         </div>
       </div>

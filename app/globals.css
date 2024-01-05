@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wheels {
+  @apply rounded-2xl bg-[url('/images/services-2.jpg')] md:rounded-[2.5rem];
+}
+
+.oil {
+  @apply rounded-s-2xl bg-[url('/images/services-3.jpg')] md:rounded-s-[2.5rem];
+}
+
+.engine {
+  @apply rounded-e-2xl bg-[url('/images/services-1.jpg')] md:rounded-e-[2.5rem];
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.text-shadow {
+  text-shadow: 0 0 20px #ffffff;
+}
+
+h1, h2 {
+  @apply text-pretty
+}

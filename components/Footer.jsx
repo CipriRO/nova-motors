@@ -16,14 +16,14 @@ const Footer = () => {
         <div className="order-first text-center lg:order-[0]">
           <h3 className="text-lg font-semibold">Nova Motors</h3>
           <p>
-            <span className="cursor-pointer lg:hover:underline">
+            <span className="cursor-pointer hover:underline">
               Privacy Policy
             </span>{" "}
             |{" "}
-            <span className="cursor-pointer lg:hover:underline">
+            <span className="cursor-pointer hover:underline">
               Terms of Service
             </span>{" "}
-            | <span className="cursor-pointer lg:hover:underline">FAQ</span>
+            | <span className="cursor-pointer hover:underline">FAQ</span>
           </p>
         </div>
 
